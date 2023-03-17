@@ -1,0 +1,16 @@
+.hover-image-zoom {
+	figure {
+		height: 260px;
+	}
+
+	img {
+		transition: scale 0.25s;
+	}
+
+	&:hover,
+	&:focus {
+		img {
+			scale: 1.1;
+		}
+	}
+}

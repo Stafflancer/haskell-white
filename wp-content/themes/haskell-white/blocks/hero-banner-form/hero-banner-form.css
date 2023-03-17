@@ -1,0 +1,172 @@
+.breadcrump-inner {
+    justify-content: center;
+    list-style: none !important;
+}
+.hero-banner-form-inner {
+    position: relative;
+    z-index: 9;
+}
+.hero-banner-form .breadcrump-inner:before{
+    margin: 0 auto;
+    right: 0;
+}
+.hero-banner-form .breadcrump-inner li,
+.hero-banner-form .breadcrump-inner span{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.20px;
+    color: var(--color-base);
+}
+.hero-banner-form .separator {
+    height: 15px;
+    background: var(--color-base);
+    width: 2px;
+    margin: 0 8px;
+    transform: rotate(23deg);
+}
+.hero-banner-form .breadcrump {
+    position: relative;
+    z-index: 9;
+}
+.hero-banner-form .breadcrump-inner > span {
+    font-weight: 700;
+}
+.hero-banner-form {
+    padding: 124px 0 172px;
+}
+.hero-banner-form .cta-form-design-heading-block {
+    max-width: 978px;
+    margin: 0 auto;
+}
+.hero-banner-form .inline-with-cards {
+    text-align: center;
+}
+.hero-banner-form h1 {
+    margin-bottom: 15px;
+}
+.hero-banner-form .acf-element-content{
+    font-size: 125%;
+    max-width: 773px;
+    line-height: 30px;
+    margin: 0 auto 68px !important;
+}
+.hero-banner-form-inner .gform_fields { 
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-column-gap: 0 !important;
+    grid-row-gap: 0 !important;
+}
+.hero-banner-form-inner .gform_fields > * {
+    max-width: 48.3%;
+     margin-bottom: 29px;
+    flex: 48.3%;
+}
+.hero-banner-form-inner .gform_wrapper.gravity-theme .gfield_label{
+    font-size: 93.75%;
+    line-height: 22px;
+    margin-bottom: 10px !important;
+}
+.hero-banner-form-inner input, 
+.hero-banner-form-inner select {
+    height: 47px;
+    outline: 0 !important;
+    color: var(--color-contrast);
+}
+.hero-banner-form-inner .gform_fields > *:nth-last-child(2), .hero-banner-form-inner .gform_fields > *:nth-last-child(3), .hero-banner-form-inner .gform_fields > *:last-child {
+    max-width: 100%;
+    flex: 100%;
+}
+.hero-banner-form-inner .gform_fields > * textarea {
+    height: 137px !important;
+    outline: 0 !important;
+    resize: none;
+}
+.hero-banner-form-inner .gform_footer.top_label {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+.hero-banner-form-inner .gform_footer.top_label input[type="submit"] {
+    margin-bottom: 0 !important;
+    background-color: var(--color-green);
+    color: #fff;
+    font-weight: 700;
+    font-size: 125%;
+    line-height: 42px !important;
+    height: auto;
+    padding: 7px 75px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.hero-banner-form-inner .gform_footer.top_label input[type="submit"]:hover{
+    background: var(--color-base) !important;
+    color: var(--color-green) !important;
+}
+.hero-banner-form-inner .gfield--type-checkbox {
+    text-align: center;
+    margin-bottom: 28px !important;
+}
+.hero-banner-form-inner .gfield--type-checkbox input[type="checkbox"] {
+    height: 22px;
+    width: 20px;
+    margin-right: 9px;
+}
+.hero-banner-form-inner .gfield_checkbox label{
+    font-size: 81.25% !important;
+}
+.hero-banner-form-inner .gfield--type-fileupload span {
+    margin-top: 0 !important;
+    display: none !important;
+    padding-top: 0 !important;
+}
+.hero-banner-form-inner input[type="file"] {
+    height: 56px;
+    opacity: 0;
+    position: relative;
+    z-index: 9;
+}
+.hero-banner-form-inner .gfield_checkbox label a {
+    text-decoration: underline !important;
+    color: var(--color-base) !important;
+}
+.hero-banner-form-inner .ginput_container_fileupload:before {
+    position: absolute;
+    content: 'Upload Files';
+    font-size: 125%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.hero-banner-form-inner .ginput_container_fileupload{
+    text-align: center;
+    max-width: 214px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (max-width:1199px){
+    .hero-banner-form {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:575px){
+    .hero-banner-form-inner .gform_fields > *{
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

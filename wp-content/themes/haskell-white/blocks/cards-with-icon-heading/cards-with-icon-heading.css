@@ -1,0 +1,99 @@
+.cards-with-icon-heading .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 22px;
+}
+.cards-with-icon-heading .cards img {
+    width: 40px;
+    height: 45px;
+}
+.cards-with-icon-heading-inner .card-footer a {
+    font-size: 162.5%;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 36px;
+}
+.cards-with-icon-heading-inner .card-footer a svg{
+    margin-left: 5px;
+    height: 14px !important;
+    width: 8px !important;
+    display: inline-block;
+}
+.cards-with-icon-heading .cards .col {
+    box-shadow: 0px 40px 110px rgb(0 0 0 / 5%);
+    padding: 41px 32px 26.5px 33px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.cards-with-icon-heading .cards .col:hover svg path {
+    stroke: #fff !important;
+}
+.cards-with-icon-heading .cards figure {
+    margin-bottom: 23px;
+}
+.inline-with-cards {
+    text-align: center;
+}
+.cards-with-icon-heading h2 {
+    padding-bottom: 10px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.cards-with-icon-heading .cards .col img{
+    transition: all 0.5s ease-in-out;
+}
+.cards-with-icon-heading .cards .col:hover img {
+    filter: invert(100%) sepia(91%) saturate(32%) hue-rotate(199deg) brightness(140%) contrast(109%);
+    mix-blend-mode: luminosity;
+}
+.cards-with-icon-heading h2:before{
+    position: absolute;
+    content: '';
+    background: #00AF93;
+    width: 60px;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+}
+.cards-with-icon-heading .inline-with-cards h2:before{
+    right: 0;
+    margin: 0 auto;
+}
+.cards-with-icon-heading-inner {
+    padding-bottom: 123px;
+}
+.cards-with-icon-heading .cards .col:hover{
+    background: var(--color-primary);
+    box-shadow: 40px 40px 50px rgb(0 0 0 / 5%);
+}
+.cards-with-icon-heading .cards .col:hover .card-footer a{
+    color: var(--color-base);
+}
+
+@media (max-width:1199px){
+    .card-footer a{
+        font-size: 143.5%;
+        line-height: 30px;
+    }
+    .cards-with-icon-heading .cards .col{
+        padding: 20px;
+    }
+}
+@media (max-width:991px){
+    .cards-with-icon-heading-inner {
+        padding-bottom: 30px;
+    }
+    .cards-with-icon-heading .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:767px){
+    .cards-with-icon-heading-inner .card-footer a {
+        font-size: 125% !important;
+    }
+}
+@media (max-width:500px){
+    .cards-with-icon-heading .cards{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/cards-with-icon-heading",
+	"title": "Cards with Icon & Heading",
+	"description": "A custom Cards with Icon & Heading block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "index-card",
+	"keywords": [ "cards", "with", "icon", "heading" ],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cards-with-icon-heading.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center top"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"full"
+		],
+		"anchor": true,
+		"alignContent": false,
+		"alignText": true,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	},
+	"style": "file:./cards-with-icon-heading.css"
+}

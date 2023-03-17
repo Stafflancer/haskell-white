@@ -1,0 +1,62 @@
+.overlay-black::before {
+    clip-path: unset !important;
+    background-color: rgb(70 69 69 / 43%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-position: right;
+    z-index: 9;
+}
+.cta-card-with-buttons {
+    padding: 162px 0 116px;
+}
+.cta-card-with-buttons-block {
+    position: relative;
+    z-index: 9;
+    max-width: 652px;
+    margin-left: auto;
+    background: var(--color-primary);
+    padding: 65px 55px 53px 49px;
+    margin-right: 100px;
+}
+.cta-card-with-buttons-block .acf-element-tagline {
+    color: #92D8EB;
+    font-weight: 700;
+    font-size: 112.5%;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+
+.cta-card-with-buttons-block .acf-element-content{
+    margin:0 0 40px 0 !important;
+    font-size: 112.5%;
+    line-height: 28px;
+}
+.cta-card-with-buttons-block a svg {
+    display: none;
+}
+.cta-card-with-buttons-block a {
+    padding: 7.5px 50px;
+}
+.cta-card-with-buttons-block a.acf-element-button:hover{
+    border-color: var(--color-base) !important;
+    color: var(--color-base) !important;
+}
+.cta-card-with-buttons-block .acf-module-buttons-group{
+    text-align: right;
+}
+
+@media (max-width:767px){
+    .cta-card-with-buttons-block {
+        max-width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+    .cta-card-with-buttons {
+        padding: 50px 0;
+    }
+}

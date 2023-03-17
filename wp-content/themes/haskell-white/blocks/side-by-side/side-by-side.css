@@ -1,0 +1,162 @@
+.side-by-side  .container {
+    max-width: 1363px;
+}
+
+.side-by-side{
+	padding-top: 168px;
+}
+.grid-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image:before {
+    position: absolute;
+    content: '';
+    background: var(--color-green);
+    bottom: 0;
+    width: 100%;
+    height: 370px;
+    max-width: 563px;
+}
+.content-first .image::before {
+    right: 0;
+}
+.image-first .image::before {
+    left: 0;
+}
+.image-first .image{
+	padding-left: 20px;
+}
+.content-first .image{
+	padding-right: 20px;
+}
+.grid-block .image {
+    max-width: 614px;
+    flex: 614px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.content-info h2{
+	margin-bottom: 22px !important;
+}
+.content-info p {
+    font-size: 112.5%;
+    line-height: 28px;
+    margin-bottom: 0 !important;
+}
+.content-info .post-excerpt{
+	margin-bottom: 0 !important;
+}
+.content-first .image {
+    order: 1;
+}
+.content-info {
+    max-width: calc(100% - 641px);
+    flex: calc(100% - 641px);
+}
+.grid-block img {
+    width: 100% !important;
+    height: 440px;
+    object-fit: cover;
+    position: relative;
+}
+.content-first .content-info {
+    padding-right: 32px;
+}
+.image-first .content-info {
+    padding-left: 32px;
+}
+
+.succeed{
+	padding-bottom: 192px;
+}
+
+/*Carreeer*/
+.financial-savings {
+    padding-top: 18px;
+}
+.side-by-side ul li {
+    font-size: 112.5%;
+    line-height: 40px;
+    margin: 0 !important;
+    position: relative;
+    padding-left: 23px;
+}
+.side-by-side ul{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-by-side ul li:before{
+	position: absolute;
+    content: '';
+    background: var(--color-green);
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.entry-content ul li::marker{
+	display: none;
+}
+.left-gap .image-first .content-info {
+    padding-left: 151px;
+}
+.educational-assistance {
+    padding-bottom: 188px;
+}
+
+
+@media (max-width:1199px){
+	.side-by-side {
+	    padding-top: 50px;
+	}
+	.grid-block > *{
+		max-width: 50% !important;
+		flex: 50% !important
+	}
+	.succeed {
+	    padding-bottom: 50px;
+	}
+}
+
+@media (max-width:991px){
+	.grid-block > *{
+		max-width: 100% !important;
+		flex: 100% !important
+	}
+	.content-first .image,
+	.image-first .image {
+	    margin-top: 20px;
+	}
+	.image-first .image {
+	    order: 2;
+	}
+	.image-first .content-info {
+	    padding-left: 0 !important;
+	}
+	.content-first .content-info {
+	    padding-right: 0 !important;
+	}
+	.side-by-side {
+	    padding-top: 50px;
+	}
+	.educational-assistance {
+	    padding-bottom: 30px;
+	}
+}
+
+@media (max-width:575px){
+	.grid-block img {
+		height: 300px;
+	}
+	.image:before{
+		width: 100%;
+    	height: 270px;
+	}
+}

@@ -1,0 +1,1 @@
+Add any SVG files, that are used as icons by the acf-icon-picker plugin. Otherwise, disregard it.

@@ -1,0 +1,42 @@
+.footer-menu {
+	a {
+		font-size: var(--wp--preset--font-size--small, 16px);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	& > li {
+		& > a {
+			color: var(--wp--preset--color--foreground, #1d252d);
+			border-bottom: 2px solid var(--wp--preset--color--senary, #efefef);
+			display: block;
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.5rem;
+			text-transform: uppercase;
+
+			&:hover,
+			&:focus {
+				color: var(--wp--preset--color--quaternary, #489fdf);
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			&:not(:first-of-type) {
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	.sub-menu {
+		margin-bottom: 1rem;
+
+		a {
+			color: var(--wp--preset--color--primary, #004ea8);
+
+			&:hover,
+			&:focus {
+				color: var(--wp--preset--color--quaternary, #489fdf);
+			}
+		}
+	}
+}

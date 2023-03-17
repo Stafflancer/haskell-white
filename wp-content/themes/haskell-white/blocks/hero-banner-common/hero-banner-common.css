@@ -1,0 +1,257 @@
+
+/*He*/
+.background-home {
+    position: absolute;
+    right: -10%;
+    top: -13%;
+    bottom: 0;
+}
+.hero-banner-common {
+    padding: 170px 0 136px;
+}
+.hero-content h1 {
+    margin-bottom: 22px;
+    max-width: 875px;
+}
+.hero-content .acf-element-content {
+    font-size: 125%;
+    line-height: 30px;
+}
+.hero-content .acf-element-content {
+    font-size: 125%;
+    line-height: 30px;
+    margin-bottom: 0 !important;
+}
+.outside-of-cards{
+    max-width: 886px;
+}
+/*.inline-with-cards{
+    max-width: 886px;
+    margin: 0 auto;
+}*/
+.inline-with-cards h1.acf-element-heading {
+    max-width: 875px;
+    margin: 0 auto 22px;
+    text-align: center;
+}
+
+/*Breadcrump css*/
+.breadcrump-inner {
+    display: flex;
+    padding: 0 0 16px 0;
+    margin: 0 0 27px 0 !important;
+    list-style: none !important;
+    position: relative;
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+}
+.breadcrump-inner:before{
+	position: absolute;
+    content: '';
+    background: #00AF93;
+    width: 44px;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+}
+.breadcrump-inner li, .breadcrump-inner span {
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.20px;
+    color: var(--color-primary);
+}
+.breadcrump-inner > span{
+	font-weight: 700;
+}
+
+.separator {
+    height: 15px;
+    background: var(--color-primary);
+    width: 2px;
+    margin: 0 8px;
+    transform: rotate(23deg);
+}
+
+.gradient-banner-common .background-home {
+    position: unset;
+}
+.gradient-banner-common .hero-content {
+    z-index: 9;
+}
+.gradient-banner-common h2 {
+    max-width: 648px;
+    margin-bottom: 26px;
+}
+.gradient-banner-common .hero-content .acf-element-content {
+    max-width: 665px;
+}
+.gradient-banner-common.hero-banner-common {
+    padding: 170px 0 235px;
+}
+.gradient-banner-common .breadcrump-inner li, 
+.gradient-banner-common .breadcrump-inner span{
+    color: var(--color-base);
+    z-index: 9;
+}
+.gradient-banner-common .breadcrump-inner:before{
+    background: var(--color-green);
+    z-index: 99;
+}
+.gradient-banner-common .separator{
+    background: var(--color-base);
+}
+.gradient-banner-common  .breadcrump-inner{
+    margin-bottom: 48px !important;
+}
+
+
+/*page-tax-planning-consulting*/
+body.page-tax-planning-consulting .hero-content{
+    max-width: 100%;
+}
+body.page-tax-planning-consulting .hero-content h2{
+    max-width: 836px;
+}
+body.page-tax-planning-consulting .hero-content .acf-element-content{
+    max-width: 987px;
+}
+body.page-tax-planning-consulting .hero-content .acf-element-content p:not(:last-child) {
+    margin-bottom: 25px;
+}
+body.page-tax-planning-consulting .hero-content .acf-element-content p:last-child {
+    margin-bottom: 0;
+}
+body.page-tax-planning-consulting .hero-banner-common {
+    padding: 170px 0 85px;
+}
+
+/*life-sciences-medical-devices*/
+.life-sciences-medical-devices {
+    padding: 170px 0 127px !important;
+}
+.life-sciences-medical-devices .acf-element-content{
+    max-width: 899px !important;
+}
+
+/*insights*/
+.gradient-banner {
+    padding: 124px 0 140px;
+}
+.gradient-banner .hero-content{
+    z-index: 999;
+}
+.gradient-banner .breadcrump-inner li, 
+.gradient-banner .breadcrump-inner span{
+    color: var(--color-base);
+    z-index: 9;
+}
+.gradient-banner .breadcrump-inner:before{
+    background: var(--color-green);
+    z-index: 99;
+}
+.gradient-banner .separator{
+    background: var(--color-base);
+}
+.gradient-banner  .breadcrump-inner{
+    margin-bottom: 48px !important;
+}
+
+/*Firms rewards*/
+.firms-awards {
+    padding: 170px 0 120px;
+}
+.firms-awards .hero-content {
+    max-width: 100%;
+}
+.firms-awards .hero-content .acf-element-content {
+    max-width: 894px !important;
+}
+
+/*PUBLIC COMPAINES*/
+body.page-public-companies .gradient-banner-common.hero-banner-common {
+    padding: 170px 0 170px;
+}
+
+/*content-library*/
+.content-library .breadcrump-inner{
+    justify-content: center;
+    margin: 0 0 32px 0 !important;
+}   
+.content-library .breadcrump-inner:before{
+    right: 0;
+    margin: 0 auto;
+}
+.content-library .breadcrump-inner li,
+.content-library .breadcrump-inner span{
+    color: var(--color-contrast);
+}
+.gradient-gray {
+    background: linear-gradient(177deg, rgb(127 134 142 / 16%), #Fff, #Fff);
+}
+.content-library  .hero-content .acf-element-content{
+    max-width: 665px;
+    margin-bottom: 0 !important;
+}
+.content-library {
+    padding: 124px 0 0;
+}
+.inline-with-cards .acf-element-content{
+    margin: 0 auto;
+    text-align: center;
+}
+.content-library .breadcrump-inner .separator{
+    background: var(--color-contrast);
+}
+
+/*career-pg*/
+.career-pg{
+    padding: 170px 0 136px !important;
+}
+.career-pg .hero-content h1{
+    max-width: 648px;
+}
+.career-pg .outside-of-cards {
+    max-width: 942px;
+}
+.career-pg.gradient-banner-common .hero-content .acf-element-content {
+    max-width: 100%;
+}
+
+/*why join haskell and white*/
+.why-join {
+    padding: 170px 0 256px !important;
+}
+
+/*firm page*/
+.firm-pg {
+    padding: 171px 0 145px !important;
+}
+.firm-pg .outside-of-cards{
+    max-width: 100%;
+}
+.firm-pg h1{
+    max-width: 1011px;
+}
+.firm-pg .acf-element-content{
+    max-width: 987px !important;
+}
+
+@media (max-width:1199px){
+    .hero-banner-common {
+        padding: 50px 0 !important;
+    }
+}
+
+
+@media (max-width:575px){
+    .hero-content .acf-element-content {
+        font-size: 110%;
+        line-height: 28px;
+        margin-bottom: 0 !important;
+    }
+    .gradient-banner-common  .breadcrump-inner{
+        margin-bottom: 24px !important;
+    }
+
+}

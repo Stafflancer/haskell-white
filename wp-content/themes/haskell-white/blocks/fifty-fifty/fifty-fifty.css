@@ -1,0 +1,268 @@
+.fifty-fifty {
+    padding: 127px 0 70px;
+}
+.fifty-fifty .outside-of-cards {
+    text-align: left;
+}
+.fifty-fifty .inline-with-cards {
+    text-align: center;
+}
+.fifty-fifty-inner .acf-module-section-header .acf-element-content {
+    font-size: 125% !important;
+    line-height: 28px;
+    color: var(--color-contrast);
+    margin-bottom: 0 !important;
+}
+.fifty-fifty-inner h2 {
+    margin-bottom: 22px;
+}
+.fifty-fifty-inner .acf-module-section-header{
+	max-width: 654px;
+}
+.fifty-fifty-content .fifty-text-text {
+    max-width: 1196px;
+    column-count: 2;
+    column-gap: 124px;
+}
+
+.fifty-fifty-inner .fifty-fifty-content{
+	margin-top: 43px;
+}
+.fifty-fifty-inner .fifty-fifty-content ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.fifty-fifty-inner .fifty-fifty-content li {
+    color: var(--color-contrast);
+    font-size: 125%;
+    line-height: 42px;
+    position: relative;
+    padding-left: 23px;
+}
+.fifty-fifty-inner .fifty-fifty-content li:before{
+	position: absolute;
+	content: '';
+	background: var(--color-green);
+	height: 5px;
+	width: 5px;
+	border-radius: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.fifty-fifty-inner .fifty-fifty-content .fifty-text h3 {
+    margin-bottom: 27px;
+}
+.fifty-fifty-inner .fifty-fifty-content .fifty-text {
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+
+.firms-we-serve{
+	padding-top: 0;
+}
+.firms-we-serve .fifty-fifty-inner .acf-module-section-header {
+    max-width: 987px;
+}
+.firms-we-serve .fifty-fifty-inner h2 {
+    margin-bottom: 13px;
+}
+.firms-we-serve .fifty-fifty-inner .fifty-fifty-content {
+    margin-top: 25px !important;
+}
+.firms-we-serve .fifty-fifty-inner .fifty-fifty-content .fifty-text .acf-element {
+    margin: 0 !important;
+}
+
+/*public compaines*/
+.about-experience {
+	padding: 191px 0 0 ;
+}
+.about-experience .container{
+	max-width: 1391px;
+}
+.about-experience .fifty-fifty-content {
+    margin-top: 0;
+}
+.experties {
+    display: flex;
+    align-items: center;
+}
+.experties .discussion-img {
+    margin-bottom: 0;
+    max-width: 618px;
+    flex: 618px;
+    position: relative;
+}
+.experties .fifty-text {
+    max-width: calc(100% - 618px);
+    flex: calc(100% - 618px);
+    padding-left: 73px;
+    margin-bottom: 0 !important;
+}
+.discussion-img img {
+    margin-left: auto;
+    position: relative;
+    z-index: 9;
+    padding-bottom: 20px;
+}
+.discussion-img{
+	margin-bottom: 0 !important;
+}
+.discussion-img:before {
+    position: absolute;
+    content: '';
+    background: var(--color-green);
+    bottom: 0;
+	left: 0;
+    max-width: 563px;
+    height: 370px;
+    width: 100%;
+}
+.experties-content li,
+.experties-content p {
+    font-size: 112.5% !important;
+    line-height: 28px !important;
+}
+
+.experties-content p {
+    margin-bottom: 30px;
+}
+
+
+/*Firm page*/
+.value-of-experience {
+    padding: 184px 0 0;
+}
+.value-of-experience .fifty-fifty-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.value-of-experience .fifty-fifty-content {
+    margin-bottom: 0;
+    max-width: 618px;
+    flex: 618px;
+    position: relative;
+}
+.value-of-experience li, .value-of-experience .acf-element.acf-element-content {
+    font-size: 112.5% !important;
+    line-height: 28px !important;
+}
+.value-of-experience .fifty-fifty-inner .row {
+    max-width: calc(100% - 618px);
+    flex: calc(100% - 618px);
+    padding-left: 0;
+    margin-bottom: 0 !important;
+}
+.business-award .fifty-fifty-inner .fifty-fifty-content,
+.value-of-experience .fifty-fifty-inner .fifty-fifty-content {
+    margin-top: 0 !important;
+}
+.value-of-experience .fifty-fifty-inner .fifty-fifty-content .fifty-text {
+    margin-bottom: 0 !important;
+}
+.business-award {
+    padding-top: 111px;
+    padding-bottom: 100px;
+}
+/*Media screen*/
+
+
+@media (min-width:992px) and (max-width:1199px){
+	.experties > * {
+		max-width: 49% !important; 
+		flex: 49%  !important;
+		padding-left: 0 !important;
+	}
+	.experties {
+		justify-content: space-between;
+	}
+	.experties .discussion-img img{
+		max-width: 450px;
+	}
+	.experties .discussion-img:before{
+		width: 430px;
+    	height: 300px;
+	}
+}
+@media (max-width:1199px){
+	.fifty-fifty{
+		padding: 50px 0;
+	}
+}
+@media (max-width:991px){
+	.fifty-fifty-inner .fifty-fifty-content li {
+	    line-height: 24px;
+	    margin-bottom: 10px;
+	}
+	.experties > * ,
+	.value-of-experience .fifty-fifty-inner > *{
+		max-width: 100% !important; 
+		flex: 100%  !important;
+		padding-left: 0 !important;
+	}
+	.experties,
+	.value-of-experience .fifty-fifty-inner{
+		flex-wrap: wrap;
+	}
+	.discussion-img img {
+	    width: 100%;
+	    padding-bottom: 20px;
+	    padding-left: 20px;
+	}
+	.discussion-img:before {
+	    width: 100%;
+	    height: 95%;
+	    max-width: 95%;
+	}
+	.discussion-img{
+		padding: 0 !important;
+	}
+	.experties .fifty-text{
+		margin-top: 20px;
+	}
+	.fifty-fifty-inner .acf-module-section-header {
+	    max-width: 100%;
+	}
+	.outside-of-cards {
+	    max-width: 100%;
+	}
+	.experties .discussion-img{
+		order: 1;
+	}
+}
+
+@media (max-width:767px){
+	.fifty-fifty-content .fifty-text-text{
+		column-gap: 0;
+		column-count: 1;
+	}
+	.fifty-fifty-inner .fifty-fifty-content .fifty-text {
+	    margin-bottom: 25px;
+	}
+	body.page-life-sciences-medical-devices .fifty-fifty-inner .fifty-fifty-content .fifty-text {
+	    margin-bottom: 0;
+	}
+	.fifty-fifty-inner .fifty-fifty-content .fifty-text h3 {
+	    margin-bottom: 10px !important;
+	}
+	.firms-we-serve{
+		padding-top: 0;
+	}
+	.value-of-experience .fifty-fifty-inner .row{
+		margin-bottom: 20px;
+	}
+	.business-award{
+		padding-top: 0;
+	}
+}
+
+@media (max-width:575px){
+	.fifty-fifty-inner .fifty-fifty-content li,
+	.fifty-fifty-inner .acf-module-section-header .acf-element-content{
+		font-size: 110% !important;
+	}
+}

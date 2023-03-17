@@ -1,0 +1,21 @@
+.gform_wrapper {
+	&.gravity-theme {
+		.gform_button {
+			background-color: var(--wp--preset--color--secondary);
+			border-radius: 9999px;
+			box-shadow: none;
+			box-sizing: border-box;
+			color: var(--wp--preset--color--foreground);
+			cursor: pointer;
+			display: inline-block;
+			font-size: var(--wp--preset--font-size--small);
+			font-weight: 700;
+			line-height: var(--wp--custom--typography--line-height--medium);
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			word-break: break-word;
+		}
+	}
+}

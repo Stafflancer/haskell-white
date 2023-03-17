@@ -1,0 +1,2 @@
+Add any SVG files, that are used as icons in the templates, i.e. footer social icons, quotes. These are compiled into an
+SVG sprite file, called svg-icons-def.svg, or can be used as a standalone file for inlining in the templates.

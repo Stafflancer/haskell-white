@@ -1,0 +1,82 @@
+.off-canvas-container {
+	--hwcpa-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--hwcpa-bg-opacity));
+	right: -100%;
+	transition: right 0.6s ease-in-out;
+	width: 75%;
+	z-index: 9998;
+}
+
+@media (min-width: 768px) {
+	.off-canvas-container {
+		width: 35vw;
+	}
+}
+
+.off-canvas-container.is-visible {
+	right: 0;
+}
+
+.admin-bar .off-canvas-container {
+	padding-top: 46px;
+}
+
+.off-canvas-open {
+	z-index: 9999;
+}
+
+.off-canvas-close {
+	top: calc((76px - 40px) / 2);
+}
+
+.is-stuck .off-canvas-close {
+	top: calc((68px - 40px) / 2);
+}
+
+.off-canvas-open,
+.off-canvas-close {
+	color: var(--wp--preset--color--black);
+	--hwcpa-menu-button-size: 2.5rem;
+	font-size: var(--hwcpa-menu-button-size, 2.5rem);
+	height: var(--hwcpa-menu-button-size, 2.5rem);
+	width: var(--hwcpa-menu-button-size, 2.5rem);
+	right: 0.75rem;
+}
+
+.off-canvas-open .icon,
+.off-canvas-close .icon {
+	display: block;
+}
+
+.is-stuck .off-canvas-open {
+	color: var(--wp--preset--color--background);
+}
+
+.admin-bar .off-canvas-open {
+	position: absolute;
+}
+
+.off-canvas-open:hover,
+.off-canvas-open:focus {
+	outline: 2px solid #000;
+}
+
+.off-canvas-screen {
+	--hwcpa-bg-opacity: 1;
+	background-color: rgba(0, 0, 0, var(--hwcpa-bg-opacity));
+	z-index: 9996;
+}
+
+.off-canvas-content {
+	display: none;
+	margin-top: 76px;
+	padding: 1rem;
+}
+
+.is-stuck .off-canvas-content {
+	margin-top: 68px;
+}
+
+.is-visible .off-canvas-content {
+	display: block;
+}

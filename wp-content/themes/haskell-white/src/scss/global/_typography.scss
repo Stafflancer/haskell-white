@@ -1,0 +1,44 @@
+.font-size {
+	&-small {
+		font-size: var(--wp--preset--font-size--small, 1rem);
+	}
+	&-huge {
+		font-size: var(--wp--custom--typography--font-size--huge, clamp(2.25rem, 4vw, 2.75rem));
+	}
+	&-gigantic {
+		font-size: var(--wp--custom--typography--font-size--gigantic, clamp(2.75rem, 6vw, 3.25rem));
+	}
+	&-colossal {
+		font-size: var(--wp--custom--typography--font-size--colossal, clamp(3.25rem, 8vw, 6.25rem));
+	}
+}
+
+blockquote {
+	border-left: 4px solid var(--wp--preset--color--secondary);
+	font-family: var(--wp--preset--font-family--lora);
+	font-size: var(--wp--preset--font-size--large);
+	font-style: italic;
+	font-weight: 400;
+	line-height: var(--wp--custom--typography--line-height--medium);
+	padding-left: 1.5rem;
+}
+
+.entry-content {
+	ul,
+	ol {
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		list-style-type: disc;
+		list-style-position: inside;
+
+		li {
+			margin-bottom: 1rem;
+
+			&::marker {
+				color: var(--wp--preset--color--quinary, #5b6770);
+			}
+		}
+	}
+}

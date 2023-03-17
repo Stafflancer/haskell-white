@@ -1,0 +1,37 @@
+.learn-more .btn-fill {
+    font-size: 93.75%;
+    line-height: 24px;
+    padding: 3.5px 16px;
+}
+.learn-more .btn-fill svg{
+    display: none;
+}
+.cta-promo-bar-inner {
+    padding: 29px 0 27px;
+}
+.cta-promo-bar h4{
+    padding-left: 15px;
+}
+.learn-more .btn-fill:hover {
+    background: #fff !important;
+    color: var(--color-green) !important;
+}
+@media (max-width:767px){
+    .cta-promo-bar-inner .acf-module {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .cta-promo-bar-inner {
+        padding: 15px 0;
+    }
+    .swiper-div figure {
+        margin-bottom: 0 !important;
+        aspect-ratio: auto;
+    }
+    .swiper.latest-reads h4{
+        max-width: 100% !important;
+    }
+    .swiper-div .acf-element-content{
+        max-width: 100% !important;
+    }
+}

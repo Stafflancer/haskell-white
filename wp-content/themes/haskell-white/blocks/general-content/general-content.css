@@ -1,0 +1,109 @@
+.general-content .acf-element-content{
+    font-size: 125%;
+	line-height: 30px;
+	margin-bottom:  0!important;
+}
+.general-content .acf-element-content p{
+	margin-bottom: 25px;
+}
+.general-content .acf-element-content p:last-child{
+	margin-bottom: 0;
+}
+.general-content {
+	padding-bottom: 110px;
+}
+/*life-sciences-medical-devices/*/
+
+.starts-up {
+	padding-top: 117px ;
+}
+.starts-up h2 {
+    margin-bottom: 37px;
+}
+
+/* career/why joiin */
+.general-content-center {
+    padding: 137px 0 0 !important;
+    text-align: center;
+}
+.general-content-center .col-lg-9,
+.benifits .col-lg-9{
+	width: 100%;
+}
+.general-content-center h2{
+	text-align: center !important;
+	margin-bottom: 59px;
+}
+.general-content-center .general-content-inner {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+
+.general-content-center .general-content-inner .acf-element-content {
+	margin: 0 !important;
+}
+.general-content-center .acf-element-content{
+	font-size: unset;
+}
+.general-content-center .general-content-inner .creativity {
+    font-size: 162.5%;
+    line-height: 36px;
+    color: var(--color-green);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.general-content-center .general-content-inner .inner-content{
+    font-size: 112.5%;
+    line-height: 28px;
+    color: var(--color-contrast);
+}
+
+.benifits {
+    text-align: center;
+    padding-top: 105px;
+}
+.benifits .general-content-inner {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+
+
+@media (max-width:991px){
+	.general-content {
+	    padding-bottom: 20px;
+	}
+	.starts-up {
+	    padding-top: 20px;
+	}
+	.starts-up h2 {
+	    margin-bottom: 10px;
+	}
+	.general-content-center {
+	    padding: 40px 0 0 !important;
+	}
+	.general-content-center h2 {
+	    margin-bottom: 32px;
+	}
+	.general-content-center .general-content-inner .creativity{
+		font-size: 134.5%;
+    	line-height: 32px;
+	}
+	.general-content-center .general-content-inner .inner-content{
+		font-size: 100%;
+    	line-height: 26px;
+	}
+	.card-withicon-flex .main-div .cards {
+	    padding-top: 0;
+	}
+}
+
+@media (max-width:575px){
+	.general-content .acf-element-content{
+		font-size: 110%;
+	    line-height: 28px;
+	    margin-bottom: 0 !important;
+	}
+	.card-withicon-flex .main-div .acf-module-card-with-icon .acf-element-content {
+	    margin-bottom: 0 !important;
+	}
+}

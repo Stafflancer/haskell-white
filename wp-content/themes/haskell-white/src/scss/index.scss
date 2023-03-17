@@ -1,0 +1,23 @@
+//----------------------------------------
+// Include Bootstrap.
+//----------------------------------------
+@import 'vendors/bootstrap';
+
+//----------------------------------------
+// Additional custom code.
+//----------------------------------------
+@import 'global/settings';
+@import 'global/typography';
+@import 'global/alignments';
+@import 'global/media';
+
+@import 'global/elements/cards';
+@import 'global/elements/icons';
+@import 'global/elements/social-icons';
+@import 'global/elements/video-toggle';
+
+@import 'templates/header';
+@import 'templates/footer';
+@import 'templates/forms';
+
+@import 'utilities/utilities';

@@ -1,0 +1,111 @@
+.link-cards {
+    padding: 124px 0 235px;
+}
+/*Breadcrump css*/
+.breadcrump-inner {
+    margin: 0 0 32px 0 !important;
+    justify-content: center;
+}
+.breadcrump-inner:before{
+    margin: 0 auto;
+    right: 0;
+}
+.breadcrump-inner li, 
+.breadcrump-inner span {
+    text-transform: uppercase;
+    color: var(--color-base);
+}
+.breadcrump-inner > span{
+    font-weight: 700;
+}
+.separator {
+    height: 15px;
+    background: var(--color-base);
+    width: 2px;
+    margin: 0 8px;
+    transform: rotate(23deg);
+}
+
+.link-cards .inline-with-cards {
+    text-align: center;
+}
+.link-cards-block .acf-element-content {
+    font-size: 125%;
+    line-height: 30px;
+    max-width: 665px;
+    margin: 0 auto 0 !important;
+}
+.link-cards-block h1 {
+    margin-bottom: 32px;
+}
+.link-cards-grid {
+    max-width: 864px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 27px;
+    margin: 99px auto 0;
+}
+.link-cards-grid > * a {
+    display: block;
+    color: var(--color-primary);
+    padding: 31px 35px;
+    background: var(--color-base);
+    font-size: 237.5% !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+    border: 2px solid var(--color-base);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 3px 9px rgb(0 0 0 / 16%);
+}
+.link-cards-grid > * a:hover{
+    background: transparent;
+    color: var(--color-base) !important;
+}
+.link-cards-grid > * a:hover svg path{
+    stroke: var(--color-base);
+}
+.link-cards-grid > * a svg {
+    height: 14px;
+    transition: all 0.4s ease-in-out;
+    width: 26px;
+}
+
+@media (max-width:991px){
+    .link-cards {
+        padding: 50px 0;
+    }
+        .link-cards-grid > * a {
+            padding: 20px;
+        font-size: 150% !important;
+    }
+    .link-cards-grid {
+        margin-top: 22px;
+        
+    }
+}
+@media (max-width:767px){
+    .link-cards-grid > * a {
+        font-size: 130% !important;
+    }
+    .link-cards-block h1 {
+        margin-bottom: 10px;
+    }
+    .link-cards-block .acf-element-content{
+        font-size: 112.5%;
+        line-height: 28px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:575px){
+    .link-cards-grid {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .link-cards-grid > * a {
+        padding: 15px;
+        border: 1px solid var(--color-base);
+        font-size: 120% !important;
+    }
+}

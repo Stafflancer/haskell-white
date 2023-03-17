@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/card-wide-simple",
+	"title": "Cards - Wide Simple",
+	"description": "A custom Cards - Wide Simple block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "index-card",
+	"keywords": [ "card", "wide", "simple" ],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "card-wide-simple.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center top"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": false
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	},
+	"style": "file:./card-wide-simple.css"
+}

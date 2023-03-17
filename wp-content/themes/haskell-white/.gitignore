@@ -1,0 +1,33 @@
+# os
+*~
+.DS_*
+.svn/
+.cvs/
+.hg/
+*.bak
+*.swp
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+
+# node
+.env
+.env.local
+config.yml
+package-lock.json
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+packaged/
+.cache
+*.sass-cache*
+*.css.map
+*.js.map
+
+# composer
+composer.lock

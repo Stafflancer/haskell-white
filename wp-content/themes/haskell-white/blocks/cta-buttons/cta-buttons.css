@@ -1,0 +1,140 @@
+.cta-buttons{
+	padding: 238px 0 223px;
+}
+.cta-buttons-inner {
+    position: relative;
+    z-index: 9;
+}
+.cta-button-content-block .outside-of-cards {
+    max-width: 1130px;
+/*    margin: 0 auto;*/
+}
+.cta-button-content-block h2 {
+    font-size: 287.5% !important;
+    margin-bottom: 42px;
+    line-height: 52px !important;
+}
+.cta-button-content-block .acf-element-content {
+    max-width: 935px;
+    margin-bottom: 42px !important;
+    font-size: 125%;
+    line-height: 32px;
+}
+.cta-button-content-block .btn-fill:first-child {
+    padding: 5px 21px;
+    margin-right: 25px;
+}
+.cta-button-content-block .btn-fill:last-child {
+    padding: 5px 37px;
+}
+
+.inline-with-cards .acf-element-content{
+    margin: 0 auto 42px !important;
+    text-align: center;
+}
+.inline-with-cards  ~ .acf-module-buttons-group{
+    text-align: center;
+}
+.inline-with-cards h2 {
+    text-align: center;
+}
+.cta-button-content-block .btn-fill:last-child:hover {
+    background: #fff !important;
+    color: var(--color-primary) !important;
+}
+.cta-buttons-inner a svg {
+    display: inline-block;
+    margin-left: 8px;
+    height: 13px;
+    width: 8px;
+}
+.cta-button-content-block .btn-fill:first-child:hover {
+    border-color: #fff !important;
+    color: #fff !important;
+}
+.cta-buttons-inner a:hover:last-child svg path{
+    stroke: var(--color-primary);
+}
+.cta-buttons-inner a svg path {
+    stroke: var(--color-base);
+}
+
+
+/*life-sciences-medical-devices/*/
+.profitable {
+    padding: 180px 0 121px;
+}
+.profitable .cta-button-content-block h2{
+    margin-bottom: 20px;
+}
+.profitable .cta-button-content-block .btn-fill:first-child{
+    margin-right: 0;
+}
+.profitable .cta-button-content-block .btn-fill:first-child:hover,
+.diagnostics .cta-button-content-block .btn-fill:first-child:hover{
+    background: transparent !important;
+}
+.profitable .cta-button-content-block .btn-fill:first-child:hover svg path,
+.diagnostics .cta-button-content-block .btn-fill:first-child:hover svg path {
+    stroke: var(--color-base);
+}
+
+/*insights*/
+.diagnostics{
+    padding: 132px 0 110px;
+}
+
+/*public-companies*/
+.public-companies{
+    padding: 106px 0 121px;
+}
+.public-companies .cta-button-content-block .btn-fill:last-child {
+    padding: 5px 80px !important;
+}
+.public-companies .cta-button-content-block .btn-fill:last-child svg path{
+    stroke: var(--color-green);
+}
+
+.opening {
+    padding: 121px 0;
+}
+.opening .cta-button-content-block .btn-fill:last-child:hover{
+    background: transparent !important;
+}
+
+.opening .cta-button-content-block .btn-fill:last-child:hover svg path {
+    stroke: var(--color-base) !important;
+}
+@media (max-width:1199px){
+    .cta-buttons {
+        padding: 50px 0;
+    }
+}
+@media (max-width:991px){
+
+}
+
+@media (max-width:767px){
+    .cta-button-content-block h2 {
+        font-size: 210.5% !important;
+        margin-bottom: 20px;
+        line-height: 52px !important;
+    }
+}
+
+@media (max-width:575px){
+    .inline-with-cards ~ .acf-module-buttons-group a {
+        margin: 0 0 10px 0 !important;
+        display: block;
+    }
+    .cta-button-content-block .acf-element-content{
+        font-size: 110%;
+        line-height: 28px;
+    }
+    .profitable .cta-button-content-block h2,
+    .cta-button-content-block h2 {
+        font-size: 167.5% !important;
+        line-height: 36px !important;
+        margin-bottom: 20px;
+    }
+}

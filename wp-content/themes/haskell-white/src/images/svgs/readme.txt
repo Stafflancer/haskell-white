@@ -1,0 +1,1 @@
+Add any SVG files, that are not used as icons, such as logos, patterns etc.

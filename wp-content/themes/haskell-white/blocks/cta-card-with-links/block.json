@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/cta-card-with-links",
+	"title": "CTA - Card with Links",
+	"description": "CTA - Card with Links",
+	"category": "acf",
+	"icon": "forms",
+	"keywords": [
+		"cta",
+		"card",
+		"with",
+		"links"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cta-card-with-links.php"
+	},
+	"attributes": {
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"full"
+		],
+		"anchor": true,
+		"alignContent": false,
+		"alignText": false,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": "file:./cta-card-with-links.css",
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

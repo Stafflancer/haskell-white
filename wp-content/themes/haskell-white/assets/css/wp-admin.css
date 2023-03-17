@@ -1,0 +1,9 @@
+.admin-bar .site-header {
+	top: 46px;
+}
+
+@media screen and (min-width: 782px) {
+	.admin-bar .site-header {
+		top: 32px;
+	}
+}

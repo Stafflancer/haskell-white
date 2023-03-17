@@ -1,0 +1,308 @@
+// Background position classes.
+.bg-fixed {
+	background-attachment: fixed;
+}
+
+.bg-local {
+	background-attachment: local;
+}
+
+.bg-scroll {
+	background-attachment: scroll;
+}
+
+.bg-bottom {
+	background-position: bottom;
+}
+
+.bg-center {
+	background-position: center;
+}
+
+.bg-left {
+	background-position: left;
+}
+
+.bg-left-bottom {
+	background-position: left bottom;
+}
+
+.bg-left-top {
+	background-position: left top;
+}
+
+.bg-right {
+	background-position: right;
+}
+
+.bg-right-bottom {
+	background-position: right bottom;
+}
+
+.bg-right-top {
+	background-position: right top;
+}
+
+.bg-top {
+	background-position: top;
+}
+
+// Background size classes.
+.bg-auto {
+	background-size: auto;
+}
+
+.bg-cover {
+	background-size: cover;
+}
+
+.bg-contain {
+	background-size: contain;
+}
+
+// Object position classes.
+.object-bottom {
+	object-position: bottom;
+}
+
+.object-center {
+	object-position: center;
+}
+
+.object-left {
+	object-position: left;
+}
+
+.object-left-bottom {
+	object-position: left bottom;
+}
+
+.object-left-top {
+	object-position: left top;
+}
+
+.object-right {
+	object-position: right;
+}
+
+.object-right-bottom {
+	object-position: right bottom;
+}
+
+.object-right-top {
+	object-position: right top;
+}
+
+.object-top {
+	object-position: top;
+}
+
+// Object fit classes.
+.object-contain {
+	object-fit: contain;
+}
+
+.object-cover {
+	object-fit: cover;
+}
+
+.object-fill {
+	object-fit: fill;
+}
+
+.object-none {
+	object-fit: none;
+}
+
+.object-scale-down {
+	object-fit: scale-down;
+}
+
+// Overflow classes.
+.overflow-clip {
+	overflow: clip;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.overflow-y-auto {
+	overflow-y: auto;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+
+.overflow-x-clip {
+	overflow-x: clip;
+}
+
+.overflow-y-clip {
+	overflow-y: clip;
+}
+
+.overflow-x-visible {
+	overflow-x: visible;
+}
+
+.overflow-y-visible {
+	overflow-y: visible;
+}
+
+.overflow-x-scroll {
+	overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+// z-index classes.
+.z-0 {
+	z-index: 0;
+}
+
+.z-1 {
+	z-index: 1;
+}
+
+.z-10 {
+	z-index: 10;
+}
+
+.z-20 {
+	z-index: 20;
+}
+
+.z-30 {
+	z-index: 30;
+}
+
+.z-40 {
+	z-index: 40;
+}
+
+.z-50 {
+	z-index: 50;
+}
+
+.z-auto {
+	z-index: auto;
+}
+
+// Background overlay classes.
+.has-background-dim {
+	&:not([class*=-background-color]) {
+		background-color: #000;
+	}
+	&:not(.has-background-gradient) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		opacity: .5;
+	}
+	&.has-background-dim-10 {
+		opacity: .1;
+	}
+	&.has-background-dim-20 {
+		opacity: .2;
+	}
+	&.has-background-dim-30 {
+		opacity: .3;
+	}
+	&.has-background-dim-40 {
+		opacity: .4;
+	}
+	&.has-background-dim-50 {
+		opacity: .5;
+	}
+	&.has-background-dim-60 {
+		opacity: .6;
+	}
+	&.has-background-dim-70 {
+		opacity: .7;
+	}
+	&.has-background-dim-80 {
+		opacity: .8;
+	}
+	&.has-background-dim-90 {
+		opacity: .9;
+	}
+	&.has-background-dim-100 {
+		opacity: 1;
+	}
+}
+
+.padding {
+	&-top {
+		&-small {
+			padding-top: var(--wp--preset--spacing--30, 2rem);
+		}
+
+		&-medium {
+			padding-top: var(--wp--preset--spacing--50, 6rem);
+		}
+
+		&-large {
+			padding-top: var(--wp--preset--spacing--70, 8rem);
+		}
+	}
+
+	&-bottom {
+		&-small {
+			padding-bottom: var(--wp--preset--spacing--30, 2rem);
+		}
+
+		&-medium {
+			padding-bottom: var(--wp--preset--spacing--50, 6rem);
+		}
+
+		&-large {
+			padding-bottom: var(--wp--preset--spacing--70, 8rem);
+		}
+	}
+}
+
+.margin {
+	&-top {
+		&-small {
+			margin-top: var(--wp--preset--spacing--30, 2rem);
+		}
+
+		&-medium {
+			margin-top: var(--wp--preset--spacing--50, 6rem);
+		}
+
+		&-large {
+			margin-top: var(--wp--preset--spacing--70, 8rem);
+		}
+	}
+
+	&-bottom {
+		&-small {
+			margin-bottom: var(--wp--preset--spacing--30, 2rem);
+		}
+
+		&-medium {
+			margin-bottom: var(--wp--preset--spacing--50, 6rem);
+		}
+
+		&-large {
+			margin-bottom: var(--wp--preset--spacing--70, 8rem);
+		}
+	}
+}
+
+section {
+	content-visibility: auto;
+	contain-intrinsic-size: 0 500px;
+}

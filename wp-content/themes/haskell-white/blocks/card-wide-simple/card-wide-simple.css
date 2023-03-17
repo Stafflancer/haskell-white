@@ -1,0 +1,116 @@
+.card-wide-simple {
+	padding: 83px 0 217px;
+}
+.card-wide-simple h2 {
+    max-width: 648px;
+    margin: 0 auto 22px;
+}
+.card-wide-simple .acf-element-content {
+    font-size: 112.5%;
+    margin-bottom: 55px;
+    line-height: 28px;
+}
+.card-wide-simple .container {
+    max-width: 1351px;
+}
+.card-wide-simple .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    row-gap: 29px;
+}
+.card-wide-simple .card {
+    background: #fff;
+    padding: 33px 53px 35px 35px;
+    position: relative;
+    border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: 5px 5px 5px #f2f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-wide-simple .card svg {
+	margin-left: 5px;
+    height: 14px;
+    width: 8px;
+}
+.card-wide-simple .card svg path{
+	stroke: var(--color-base);
+}
+.card-wide-simple .card:hover svg path{
+	stroke: var(--color-cobalt-blue);
+}
+.card-wide-simple  .card-wide-simple a {
+    padding: 5px 22px;
+}
+.card-wide-simple  .card-img img {
+    height: 52px;
+    max-width: 52px;
+    width: 100%;
+}
+.card-wide-simple  .card-content {
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 169px);
+    flex: calc(100% - 169px);
+}
+.card-wide-simple  .card-body {
+    margin-left: 16px;
+}
+.card-wide-simple  .btn-fill{
+	padding: 5px 22px;
+}
+.card-wide-simple .card-footer {
+    max-width: 169px;
+    flex: 169px;
+}
+
+
+@media (max-width:1199px){
+	.card-wide-simple {
+	    padding: 50px 0;
+	}
+	.card-wide-simple .card {
+	    padding: 18px !important;
+	}
+	.card-wide-simple .card-content h3 {
+	    font-size: 125% !important;
+	    line-height: 29px !important;
+	}
+}
+
+
+@media (max-width:991px){
+	.card-wide-simple .cards{
+		grid-template-columns: 1fr !important;
+	}
+}
+
+
+
+
+@media (max-width:480px){
+	.card-wide-simple .card{
+		display: block;
+		text-align: center;
+	}
+	.card-wide-simple .card > *{
+		display: block;
+		max-width: 100%; flex: 100%;
+	}
+	.card-wide-simple .card-footer{
+		margin-top: 10px;
+	}
+	.card-wide-simple .card-body {
+	    margin-left: 0;
+	}
+	.card-wide-simple .card-img img{
+		margin:0 auto;
+	}
+}
+
+
+
+
+
+

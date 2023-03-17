@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/fifty-fifty",
+	"title": "Fifty/Fifty",
+	"description": "A custom Fifty Fifty block.",
+	"category": "acf",
+	"icon": "image-flip-horizontal",
+	"keywords": [
+		"fifty",
+		"fifty"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "fifty-fifty.php"
+	},
+	"attributes": {
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"full"
+		],
+		"anchor": true,
+		"alignContent": false,
+		"alignText": false,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": "file:./fifty-fifty.css",
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

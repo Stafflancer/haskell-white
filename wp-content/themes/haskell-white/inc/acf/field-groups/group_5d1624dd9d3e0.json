@@ -1,0 +1,471 @@
+{
+    "key": "group_5d1624dd9d3e0",
+    "title": "Background Options",
+    "fields": [
+        {
+            "key": "field_5d1625036d0ba",
+            "label": "Background Options",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5d1625096d0bb",
+            "label": "Background Options",
+            "name": "background_options",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "Remember: image and video files should be compressed and optimized with tools like ImageOptim (https:\/\/imageoptim.com\/online) and Handbrake (https:\/\/handbrake.fr\/) prior to upload. For best results, background media should be at least 1280x720.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5d1625166d0bc",
+                    "label": "Media Type",
+                    "name": "background_type",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "Choose a type of background.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "None",
+                        "color": "Color",
+                        "gradient": "Gradient",
+                        "image": "Image",
+                        "video": "Video"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_5d16255c6d0bd",
+                    "label": "Color",
+                    "name": "background_color",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "Select a background color.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "color"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5d16233395958"
+                    ],
+                    "display": "group",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_5d1626806d0c0",
+                    "label": "Image",
+                    "name": "background_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Add\/Upload an image file. (jpg, .png). For best results use 1200x675, up to 1920x1080 resolution.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "full"
+                },
+                {
+                    "key": "field_5d1626ac6d0c1",
+                    "label": "Video",
+                    "name": "background_oembed_video",
+                    "aria-label": "",
+                    "type": "oembed",
+                    "instructions": "Required. Add\/Upload an .mp4 video file.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
+                },
+                {
+                    "key": "field_61b97b57863d0",
+                    "label": "Parallax",
+                    "name": "has_parallax",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Background stays in place as you scroll down, also known as a parallax effect.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No",
+                    "ui": 1
+                },
+                {
+                    "key": "field_5d1625c56d0be",
+                    "label": "Add Overlay Color",
+                    "name": "has_overlay",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Background Overlay to use with Image and Video only.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Add",
+                    "ui_off_text": "Remove",
+                    "ui": 1
+                },
+                {
+                    "key": "field_63f5b1373d49e",
+                    "label": "Overlay Type",
+                    "name": "overlay_type",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625c56d0be",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "color": "Color",
+                        "gradient": "Gradient"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_5d1626116d0bf",
+                    "label": "Overlay Color",
+                    "name": "overlay_color",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "Select Background Overlay Color.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625c56d0be",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "image"
+                            },
+                            {
+                                "field": "field_63f5b1373d49e",
+                                "operator": "==",
+                                "value": "color"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5d1625c56d0be",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "video"
+                            },
+                            {
+                                "field": "field_63f5b1373d49e",
+                                "operator": "==",
+                                "value": "color"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_5d16233395958"
+                    ],
+                    "display": "group",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1
+                },
+                {
+                    "key": "field_63f5b14d3d49f",
+                    "label": "Overlay Gradient",
+                    "name": "gradient_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "image"
+                            },
+                            {
+                                "field": "field_63f5b1373d49e",
+                                "operator": "==",
+                                "value": "gradient"
+                            },
+                            {
+                                "field": "field_5d1625c56d0be",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "video"
+                            },
+                            {
+                                "field": "field_63f5b1373d49e",
+                                "operator": "==",
+                                "value": "gradient"
+                            },
+                            {
+                                "field": "field_5d1625c56d0be",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "light-blue-to-dark-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:linear-gradient(0deg, #0077bc, #014785); border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Blue to Dark Blue<\/div>"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_60ac0ce6310bf",
+                    "label": "Pattern",
+                    "name": "has_pattern",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Adds a pattern to the background.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Add",
+                    "ui_off_text": "Remove",
+                    "ui": 1
+                },
+                {
+                    "key": "field_63b2aabb4afc5",
+                    "label": "Pattern Image",
+                    "name": "pattern_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60ac0ce6310bf",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_63f598f639e74",
+                    "label": "Gradient Color",
+                    "name": "gradient_color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5d1625166d0bc",
+                                "operator": "==",
+                                "value": "gradient"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "light-blue-to-dark-blue": "<div style=\"display: flex; align-items: center;\"><span style=\"background-color:linear-gradient(0deg, #0077bc, #014785); border: 1px solid #ccc;display:inline-block; height: 15px; margin-right: 10px; width: 15px;\"><\/span>Light Blue to Dark Blue<\/div>"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1677046351
+}

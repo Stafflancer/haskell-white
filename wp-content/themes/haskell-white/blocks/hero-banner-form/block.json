@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/hero-banner-form",
+	"title": "Hero Banner - Form",
+	"description": "A custom Hero Banner - Form block.",
+	"category": "acf",
+	"usesContext": [ "allowResize", "imageCrop", "fixedHeight" ],
+	"icon": "admin-home",
+	"keywords": [ "hero", "banner", "form" ],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "hero-banner-form.php"
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"alignContent": {
+			"type": "string",
+			"default": "center top"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"alignContent": "matrix",
+		"alignText": true,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": false
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	},
+	"style": "file:./hero-banner-form.css"
+}

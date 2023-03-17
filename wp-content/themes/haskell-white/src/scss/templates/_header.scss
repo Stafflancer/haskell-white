@@ -1,0 +1,53 @@
+//--------------------------------------------------------------
+// Global Site Header
+//--------------------------------------------------------------
+.site-header {
+	--hwcpa-bg-opacity: 0.25;
+	background-color: rgba(0, 0, 0, var(--hwcpa-bg-opacity));
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	transition: all 0.25s;
+
+	&.is-stuck {
+		--hwcpa-bg-opacity: 1;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
+
+	> .container {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.site-description {
+		text-decoration: none;
+	}
+
+	.site-branding a {
+		text-decoration: none;
+	}
+
+	> .wp-block-code,
+	> .wp-block-heading,
+	> .wp-block-image,
+	> .wp-block-pullquote,
+	> .wp-block-quote,
+	> .wp-block-spacer,
+	> .wp-block-table,
+	> .wp-block-gallery {
+		margin-top: 0;
+		margin-bottom: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.entry-header {
+	margin-top: 7rem;
+}
+
+@media (min-width: 768px) {
+	.entry-header {
+		margin-top: 10rem;
+	}
+}

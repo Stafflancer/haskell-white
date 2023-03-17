@@ -1,0 +1,154 @@
+.modal {
+	display: none;
+	overflow: hidden;
+	transition-duration: 350ms;
+	z-index: 1050;
+}
+
+.modal .modal-overlay {
+	background-color: rgba(0, 0, 0, 0.95);
+	z-index: -1;
+}
+
+.modal .modal-dialog {
+	opacity: 0;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 350ms;
+	animation-duration: 350ms;
+}
+
+.modal.modal-opened {
+	display: block;
+}
+
+.modal-dialog.is-opened {
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-animation-name: video-lightbox-overlay-fade-in;
+	animation-name: video-lightbox-overlay-fade-in;
+}
+
+.modal-dialog.is-closed {
+	-webkit-animation-name: video-lightbox-overlay-fade-out;
+	animation-name: video-lightbox-overlay-fade-out;
+}
+
+.modal .modal-content {
+	width: 155vh;
+	max-width: 100%;
+	height: 100%;
+	-webkit-animation-duration: 350ms;
+	animation-duration: 350ms;
+}
+
+.modal-dialog.is-opened .modal-content {
+	-webkit-animation-name: video-lightbox-open;
+	animation-name: video-lightbox-open;
+}
+
+.modal-dialog.is-closed .modal-content {
+	-webkit-animation-name: video-lightbox-close;
+	animation-name: video-lightbox-close;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+.modal iframe {
+	background-color: #000;
+}
+
+.modal-close {
+	cursor: pointer;
+	font-size: 1rem;
+	line-height: 1;
+	width: 24px;
+	height: 24px;
+	margin: 0.625rem;
+	outline: 0;
+	transition: opacity 0.35s;
+}
+
+.modal-close:hover {
+	opacity: 0.7;
+}
+
+@-webkit-keyframes video-lightbox-overlay-fade-in {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes video-lightbox-overlay-fade-in {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes video-lightbox-overlay-fade-out {
+	from {
+		opacity: 1
+	}
+	to {
+		opacity: 0
+	}
+}
+
+@keyframes video-lightbox-overlay-fade-out {
+	from {
+		opacity: 1
+	}
+	to {
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes video-lightbox-open {
+	from {
+		opacity: 0;
+		transform: scale(.9)
+	}
+	to {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+
+@keyframes video-lightbox-open {
+	from {
+		opacity: 0;
+		transform: scale(.9)
+	}
+	to {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+
+@-webkit-keyframes video-lightbox-close {
+	0% {
+		opacity: 1;
+		transform: scale(1)
+	}
+	50% {
+		opacity: 0;
+		transform: scale(.9)
+	}
+}
+
+@keyframes video-lightbox-close {
+	0% {
+		opacity: 1;
+		transform: scale(1)
+	}
+	50% {
+		opacity: 0;
+		transform: scale(.9)
+	}
+}

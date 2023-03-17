@@ -1,0 +1,102 @@
+//----------------------------------------
+// Include parts of Bootstrap.
+//----------------------------------------
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc):
+@import '~bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here:
+// Toggle global options.
+$enable-caret: false;
+$enable-validation-icons: false;
+
+$body-color: #1d252d;
+$primary: #004ea8;
+$secondary: #f9e547;
+
+$h1-font-size: clamp(2.5rem, -0.2097rem + 7.5269vw, 6rem);
+$h2-font-size: clamp(2rem, -0.0323rem + 5.6452vw, 4.625rem);
+$h3-font-size: clamp(2rem, 1.6129rem + 1.0753vw, 2.5rem);
+$h4-font-size: clamp(1.375rem, 1.2782rem + 0.2688vw, 1.5rem);
+$h5-font-size: clamp(1rem, 0.9032rem + 0.2688vw, 1.125rem);
+$h6-font-size: clamp(0.875rem, 0.7782rem + 0.2688vw, 1rem);
+
+// Create your own map.
+$custom-colors: (
+	'tertiary': #418fde,
+	'quaternary': #489fdf,
+	'quinary': #5b6770,
+	'senary': #efefef,
+	'background': #fff,
+	'foreground': $body-color,
+);
+
+// 3. Include remainder of required Bootstrap stylesheets:
+@import '~bootstrap/scss/variables';
+
+// 4. Include any default map overrides here:
+// Remove colors from $colors map.
+$colors: map-remove($colors, 'indigo', 'purple', 'pink', 'orange', 'yellow', 'green', 'teal', 'cyan', 'gray', 'gray-dark');
+// Remove colors from $theme-colors map.
+$theme-colors: map-remove($theme-colors, 'info', 'warning', 'light', 'dark');
+
+// Merge the maps.
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 5. Include remainder of required parts:
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+
+// 6. Optionally include any other parts as needed:
+//@import '~bootstrap/scss/accordion';
+//@import '~bootstrap/scss/alert';
+//@import '~bootstrap/scss/badge';
+//@import '~bootstrap/scss/breadcrumb';
+//@import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/card';
+//@import '~bootstrap/scss/carousel';
+//@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/containers';
+//@import '~bootstrap/scss/dropdown';
+//@import '~bootstrap/scss/forms/labels';
+//@import '~bootstrap/scss/forms/form-text';
+//@import '~bootstrap/scss/forms/form-control';
+//@import '~bootstrap/scss/forms/form-select';
+//@import '~bootstrap/scss/forms/form-check';
+//@import '~bootstrap/scss/forms/form-range';
+//@import '~bootstrap/scss/forms/floating-labels';
+//@import '~bootstrap/scss/forms/input-group';
+//@import '~bootstrap/scss/forms/validation';
+@import '~bootstrap/scss/grid';
+//@import '~bootstrap/scss/helpers/clearfix';
+//@import '~bootstrap/scss/helpers/color-bg';
+//@import '~bootstrap/scss/helpers/colored-links';
+@import '~bootstrap/scss/helpers/ratio';
+@import '~bootstrap/scss/helpers/position';
+//@import '~bootstrap/scss/helpers/stacks';
+@import '~bootstrap/scss/helpers/visually-hidden';
+@import '~bootstrap/scss/helpers/stretched-link';
+@import '~bootstrap/scss/helpers/text-truncation';
+//@import '~bootstrap/scss/helpers/vr';
+@import '~bootstrap/scss/images';
+//@import '~bootstrap/scss/list-group';
+//@import '~bootstrap/scss/modal';
+//@import '~bootstrap/scss/nav';
+//@import '~bootstrap/scss/navbar';
+//@import '~bootstrap/scss/offcanvas';
+//@import '~bootstrap/scss/pagination';
+//@import '~bootstrap/scss/placeholders';
+//@import '~bootstrap/scss/popover';
+//@import '~bootstrap/scss/progress';
+//@import '~bootstrap/scss/spinners';
+//@import '~bootstrap/scss/tables';
+//@import '~bootstrap/scss/toasts';
+//@import '~bootstrap/scss/tooltip';
+//@import '~bootstrap/scss/transitions';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/utilities';
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`:
+//@import '~bootstrap/scss/utilities/api';

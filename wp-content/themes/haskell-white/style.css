@@ -1,0 +1,1138 @@
+/*
+Theme Name:         Haskell & White
+Author:             Bop Design
+Author URI:         https://www.bopdesign.com/
+Description:        The hwcpa theme by Bop Design for WordPress is a fully responsive theme that looks great on any device.
+Version:            1.0.0
+Requires at least:  6.0
+Tested up to:       6.1
+Requires PHP:       7.4
+License:            GNU General Public License
+License URI:        https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain:        hwcpa
+Tags: full-site-editing, acf, acf-blocks, editor-style, block-styles, block-patterns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+	margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+	font-family: system-ui,
+	-apple-system, /* Firefox supports this but not yet `system-ui` */ 'Segoe UI',
+	Roboto,
+	Helvetica,
+	Arial,
+	sans-serif,
+	'Apple Color Emoji',
+	'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family: ui-monospace,
+	SFMono-Regular,
+	Consolas,
+	'Liberation Mono',
+	Menlo,
+	monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	background-image: none;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box; /* 1 */
+	border-width: 0; /* 2 */
+	border-style: solid; /* 2 */
+	border-color: currentColor; /* 2 */
+	word-wrap: break-word;
+}
+
+:root {
+	/* Layout */
+	--layout-content-size: 1320px;
+	--layout-wide-size: 1500px;
+
+	/* Font Family */
+	--fallback-font: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, helvetica, arial, oxygen-sans, ubuntu, cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+	--global--font-primary: var(--font-headings, --fallback-font);
+	--global--font-secondary: var(--font-base, --fallback-font);
+	/* Headings */
+	--heading--font-family: var(--global--font-primary);
+	/* Box Shadow */
+	--hwcpa-ring-inset: var(--hwcpa-empty, /*!*/ /*!*/);
+	--hwcpa-ring-offset-width: 0;
+	--hwcpa-ring-offset-color: #fff;
+	--hwcpa-ring-color: rgba(59, 130, 246, 0.5);
+	--hwcpa-ring-offset-shadow: 0 0 #0000;
+	--hwcpa-ring-shadow: 0 0 #0000;
+	--hwcpa-shadow: 0 0 #0000;
+
+	/* Swiper JS */
+	--swiper-navigation-color: #fff;
+	--swiper-pagination-color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
+html {
+	/*font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+	line-height: 1.5;
+}
+
+body {
+	font-family: inherit;
+	line-height: inherit;
+}
+
+hr {
+	border-top-width: 1px;
+}
+
+img {
+	border-style: solid;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+	opacity: 1;
+	color: #9ca3af;
+}
+
+button,
+[role="button"] {
+	cursor: pointer;
+}
+
+:-moz-focusring {
+	outline: auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	padding: 0;
+	line-height: inherit;
+	color: inherit;
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+	display: block;
+	vertical-align: middle;
+}
+
+img,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+[hidden] {
+	display: none;
+}
+
+blockquote,
+dl, dd,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+hr,
+figure,
+p,
+pre {
+	margin-bottom: 1rem;
+}
+
+.font-size-small {
+	font-size: var(--wp--preset--font-size--small, 1rem);
+}
+
+.font-size-huge {
+	font-size: var(--wp--custom--typography--font-size--huge, clamp(2.25rem, 4vw, 2.75rem));
+}
+
+.font-size-gigantic {
+	font-size: var(--wp--custom--typography--font-size--gigantic, clamp(2.75rem, 6vw, 3.25rem));
+}
+
+.font-size-colossal {
+	font-size: var(--wp--custom--typography--font-size--colossal, clamp(3.25rem, 8vw, 6.25rem));
+}
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
+blockquote {
+	border-left: 4px solid var(--wp--preset--color--secondary);
+	font-size: 22px;
+	padding-left: 1.5rem;
+}
+
+.entry-content ul,
+.entry-content ol {
+	margin-bottom: 1rem;
+}
+
+.entry-content ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.entry-content ul li {
+	margin-bottom: 1rem;
+}
+
+.entry-content ul li::marker {
+	color: var(--wp--preset--color--quinary, #5b6770)
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1rem;
+	max-width: var(--layout-content-size, 1320px);
+}
+
+.alignright {
+	float: right;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	max-width: var(--layout-content-size, 1320px);
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	max-width: var(--layout-content-size, 1320px);
+}
+
+.alignnone {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--layout-content-size, 1320px);
+}
+
+.alignwide {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--layout-wide-size, 1500px);
+}
+
+.alignfull {
+	max-width: none;
+}
+
+.fluid-embed {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.fluid-embed embed,
+.fluid-embed object,
+.fluid-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+	.video-background,
+	.image-background {
+		height: 100%;
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+}
+
+.ie .video-background,
+.edge .video-background {
+	height: auto;
+}
+
+.hover-image-zoom figure {
+	aspect-ratio: 16 / 9;
+	max-height: 260px;
+}
+
+.hover-image-zoom img {
+	transition: all 0.25s;
+}
+
+.hover-image-zoom:hover img,
+.hover-image-zoom:focus img {
+	scale: 1.1;
+}
+
+.svg-defs {
+	display: none;
+}
+
+.svg-icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+a.social-icon {
+	background-color: var(--wp--preset--color--primary);
+	border: 1px solid var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--background);
+	font-size: 0.75em;
+	line-height: 1.875rem;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	text-align: center;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+a.social-icon:hover {
+	background-color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--primary);
+}
+
+.video-toggle {
+	position: absolute;
+	right: 1%;
+	bottom: 2%;
+	height: 1.375rem;
+	width: 1.375rem;
+	/*background: url('assets/images/svg-icons/pause.svg') center center no-repeat transparent;*/
+	background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMjQgMjgiPgo8dGl0bGU+UGF1c2U8L3RpdGxlPgo8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yNCAzdjIyYzAgMC41NDctMC40NTMgMS0xIDFoLThjLTAuNTQ3IDAtMS0wLjQ1My0xLTF2LTIyYzAtMC41NDcgMC40NTMtMSAxLTFoOGMwLjU0NyAwIDEgMC40NTMgMSAxek0xMCAzdjIyYzAgMC41NDctMC40NTMgMS0xIDFoLThjLTAuNTQ3IDAtMS0wLjQ1My0xLTF2LTIyYzAtMC41NDcgMC40NTMtMSAxLTFoOGMwLjU0NyAwIDEgMC40NTMgMSAxeiIvPgo8L3N2Zz4K) center center no-repeat transparent;
+	background-size: 1rem;
+	opacity: 0.2;
+	padding: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.video-toggle:active,
+.video-toggle:focus,
+.video-toggle:hover {
+	opacity: 1;
+}
+
+.video-toggled .video-toggle {
+	/*background-image: url('assets/images/svg-icons/play.svg');*/
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjIyIiBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMjIgMjgiPgo8dGl0bGU+UGxheTwvdGl0bGU+CjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTIxLjYyNSAxNC40ODRsLTIwLjc1IDExLjUzMWMtMC40ODQgMC4yNjYtMC44NzUgMC4wMzEtMC44NzUtMC41MTZ2LTIzYzAtMC41NDcgMC4zOTEtMC43ODEgMC44NzUtMC41MTZsMjAuNzUgMTEuNTMxYzAuNDg0IDAuMjY2IDAuNDg0IDAuNzAzIDAgMC45Njl6Ii8+Cjwvc3ZnPgo=);
+}
+
+.site-header {
+	--hwcpa-bg-opacity: 0.25;
+	background-color: rgba(0, 0, 0, var(--hwcpa-bg-opacity));
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	transition: all 0.25s;
+}
+
+.site-header.is-stuck {
+	--hwcpa-bg-opacity: 1;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+
+.site-header > .container {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.site-header .site-description {
+	text-decoration: none;
+}
+
+.site-header .site-branding a {
+	text-decoration: none;
+}
+
+.site-header > .wp-block-code,
+.site-header > .wp-block-heading,
+.site-header > .wp-block-image,
+.site-header > .wp-block-pullquote,
+.site-header > .wp-block-quote,
+.site-header > .wp-block-spacer,
+.site-header > .wp-block-table,
+.site-header > .wp-block-gallery {
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.entry-header {
+	margin-top: 7rem;
+}
+
+@media (min-width: 768px) {
+	.entry-header {
+		margin-top: 10rem;
+	}
+}
+
+.footer-menu a {
+	font-size: var(--wp--preset--font-size--small, 16px);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.footer-menu > li > a {
+	color: var(--wp--preset--color--foreground, #1d252d);
+	border-bottom: 2px solid var(--wp--preset--color--senary, #efefef);
+	display: block;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-transform: uppercase;
+}
+
+.footer-menu > li > a:hover,
+.footer-menu > li > a:focus {
+	color: var(--wp--preset--color--quaternary, #489fdf);
+}
+
+.footer-menu .sub-menu {
+	margin-bottom: 1rem;
+}
+
+.footer-menu .sub-menu a {
+	color: var(--wp--preset--color--primary, #004ea8);
+}
+
+.footer-menu .sub-menu a:hover,
+.footer-menu .sub-menu a:focus {
+	color: var(--wp--preset--color--quaternary, #489fdf);
+}
+
+@media (min-width: 992px) {
+	.footer-menu > li:not(:first-of-type) {
+		margin-left: 2rem;
+	}
+}
+
+.cta-form .gform_wrapper.gravity-theme input[type="text"],
+.cta-form .gform_wrapper.gravity-theme input[type="email"],
+.cta-form .gform_wrapper.gravity-theme input[type="number"],
+.cta-form .gform_wrapper.gravity-theme input[type="tel"] {
+	border-radius: 9999px;
+	font-size: var(--wp--preset--font-size--small);
+	line-height: var(--wp--custom--typography--line-height--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+
+}
+
+.cta-form .gform_wrapper.gravity-theme .gfield-choice-input + label {
+	color: var(--wp--preset--color--background);
+	padding-left: 1rem;
+}
+
+.cta-form .wp-block-column:not(.form-inline) .gform_wrapper.gravity-theme .gform_footer,
+.cta-form .wp-block-column:not(.form-inline) .gform_wrapper.gravity-theme .gform_footer {
+	justify-content: center;
+}
+
+.cta-form .gform_wrapper.gravity-theme .gform_footer {
+	padding-bottom: 0;
+}
+
+.cta-form .gform_wrapper.gravity-theme .gform_button {
+	border-radius: 9999px;
+	box-shadow: none;
+	cursor: pointer;
+	display: inline-block;
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+	text-align: center;
+	text-decoration: none;
+	word-break: break-word;
+	box-sizing: border-box;
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	line-height: var(--wp--custom--typography--line-height--medium);
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	.cta-form .form-inline .gform_wrapper.gravity-theme {
+		position: relative;
+	}
+
+	.cta-form .form-inline .gform_wrapper.gravity-theme input[type="email"] {
+		padding: calc(.667em + 2px) 12rem calc(.667em + 2px) calc(1.333em + 2px);
+
+	}
+
+	.cta-form .form-inline .gform_wrapper.gravity-theme input[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+	}
+}
+
+.bg-fixed {
+	background-attachment: fixed;
+}
+
+.bg-local {
+	background-attachment: local;
+}
+
+.bg-scroll {
+	background-attachment: scroll;
+}
+
+.bg-bottom {
+	background-position: bottom;
+}
+
+.bg-center {
+	background-position: center;
+}
+
+.bg-left {
+	background-position: left;
+}
+
+.bg-left-bottom {
+	background-position: left bottom;
+}
+
+.bg-left-top {
+	background-position: left top;
+}
+
+.bg-right {
+	background-position: right;
+}
+
+.bg-right-bottom {
+	background-position: right bottom;
+}
+
+.bg-right-top {
+	background-position: right top;
+}
+
+.bg-top {
+	background-position: top;
+}
+
+.bg-auto {
+	background-size: auto;
+}
+
+.bg-cover {
+	background-size: cover;
+}
+
+.bg-contain {
+	background-size: contain;
+}
+
+.object-bottom {
+	object-position: bottom;
+}
+
+.object-center {
+	object-position: center;
+}
+
+.object-left {
+	object-position: left;
+}
+
+.object-left-bottom {
+	object-position: left bottom;
+}
+
+.object-left-top {
+	object-position: left top;
+}
+
+.object-right {
+	object-position: right;
+}
+
+.object-right-bottom {
+	object-position: right bottom;
+}
+
+.object-right-top {
+	object-position: right top;
+}
+
+.object-top {
+	object-position: top;
+}
+
+.object-contain {
+	object-fit: contain;
+}
+
+.object-cover {
+	object-fit: cover;
+}
+
+.object-fill {
+	object-fit: fill;
+}
+
+.object-none {
+	object-fit: none;
+}
+
+.object-scale-down {
+	object-fit: scale-down;
+}
+
+.overflow-clip {
+	overflow: clip;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.overflow-y-auto {
+	overflow-y: auto;
+}
+
+.overflow-x-hidden {
+	overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
+
+.overflow-x-clip {
+	overflow-x: clip;
+}
+
+.overflow-y-clip {
+	overflow-y: clip;
+}
+
+.overflow-x-visible {
+	overflow-x: visible;
+}
+
+.overflow-y-visible {
+	overflow-y: visible;
+}
+
+.overflow-x-scroll {
+	overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+	overflow-y: scroll;
+}
+
+.z-0 {
+	z-index: 0;
+}
+
+.z-1 {
+	z-index: 1;
+}
+
+.z-10 {
+	z-index: 10;
+}
+
+.z-20 {
+	z-index: 20;
+}
+
+.z-30 {
+	z-index: 30;
+}
+
+.z-40 {
+	z-index: 40;
+}
+
+.z-50 {
+	z-index: 50;
+}
+
+.z-auto {
+	z-index: auto;
+}
+
+.has-background-dim:not([class*=-background-color]) {
+	background-color: #000;
+}
+
+.has-background-dim:not(.has-background-gradient) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	opacity: .5;
+}
+
+.has-background-dim.has-background-dim-10 {
+	opacity: .1;
+}
+
+.has-background-dim.has-background-dim-20 {
+	opacity: .2;
+}
+
+.has-background-dim.has-background-dim-30 {
+	opacity: .3;
+}
+
+.has-background-dim.has-background-dim-40 {
+	opacity: .4;
+}
+
+.has-background-dim.has-background-dim-50 {
+	opacity: .5;
+}
+
+.has-background-dim.has-background-dim-60 {
+	opacity: .6;
+}
+
+.has-background-dim.has-background-dim-70 {
+	opacity: .7;
+}
+
+.has-background-dim.has-background-dim-80 {
+	opacity: .8;
+}
+
+.has-background-dim.has-background-dim-90 {
+	opacity: .9;
+}
+
+.has-background-dim.has-background-dim-100 {
+	opacity: 1;
+}
+
+.padding-top-small {
+	padding-top: var(--wp--custom--spacing--small, 1.5rem);
+}
+
+.padding-bottom-small {
+	padding-bottom: var(--wp--custom--spacing--small, 1.5rem);
+}
+
+.padding-top-medium {
+	padding-top: var(--wp--custom--spacing--medium, 6rem);
+}
+
+.padding-bottom-medium {
+	padding-bottom: var(--wp--custom--spacing--medium, 6rem);
+}
+
+.padding-top-large {
+	padding-top: var(--wp--custom--spacing--large, 8rem);
+}
+
+.padding-bottom-large {
+	padding-bottom: var(--wp--custom--spacing--large, 8rem);
+}
+
+.margin-top-small {
+	margin-top: var(--wp--custom--spacing--small, 2rem);
+}
+
+.margin-bottom-small {
+	margin-bottom: var(--wp--custom--spacing--small, 2rem);
+}
+
+.margin-top-medium {
+	margin-top: var(--wp--custom--spacing--medium, 6rem);
+}
+
+.margin-bottom-medium {
+	margin-bottom: var(--wp--custom--spacing--medium, 6rem);
+}
+
+.margin-top-large {
+	margin-top: var(--wp--custom--spacing--large, 8rem);
+}
+
+.margin-bottom-large {
+	margin-bottom: var(--wp--custom--spacing--large, 8rem);
+}
+
+section {
+	content-visibility: auto;
+	contain-intrinsic-size: 0 500px;
+}

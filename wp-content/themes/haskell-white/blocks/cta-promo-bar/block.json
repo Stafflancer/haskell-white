@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "acf/cta-promo-bar",
+	"title": "CTA - Promo Bar",
+	"description": "CTA with heading and button",
+	"category": "acf",
+	"icon": "forms",
+	"keywords": [
+		"cta",
+		"promo",
+		"bar"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cta-promo-bar.php"
+	},
+	"attributes": {
+		"textColor": {
+			"type": "string",
+			"default": "foreground"
+		}
+	},
+	"supports": {
+		"align": [
+			"full"
+		],
+		"anchor": true,
+		"alignContent": false,
+		"alignText": false,
+		"color": {
+			"background": false,
+			"link": false,
+			"text": true
+		},
+		"fullHeight": false,
+		"html": false,
+		"jsx": true,
+		"multiple": true,
+		"reusable": true
+	},
+	"style": "file:./cta-promo-bar.css",
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

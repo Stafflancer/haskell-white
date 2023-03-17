@@ -1,0 +1,180 @@
+.related-content {
+    padding: 128px 0;
+}
+.related-content-inner h2 {
+    font-size: 300% !important;
+    margin-bottom: 82px;
+    line-height: 56px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0;
+    left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0;
+    right: auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 43px;
+    top: 56%;
+    height: 43px;
+    border: 2px solid var(--color-base) !important;
+}
+.related-video-card figure {
+    aspect-ratio: unset;
+    max-height: 281px;
+    margin-bottom: 0;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: var(--color-base);
+    font-weight: 800;
+    font-size: 100%;
+}
+.related-video-card img {
+    width: 100%;
+    height: 257px;
+    object-fit: cover;
+}
+.related-video-card {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+}
+.related-videos-flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    height: 320px;
+}
+.related-video-card .card-body {
+    padding: 38px 27px 0 35px;
+}
+.related-video-card .card-body label {
+    font-size: 87.5%;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+    display: block;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: var(--color-contrast);
+}
+.related-video-card .card-body h4{
+    font-size: 137.5% !important;
+    margin-bottom: 15px !important;
+    line-height: 32px !important;
+    max-width: 322px;
+    color: var(--color-primary);
+}
+.related-video-card .acf-element-content {
+    font-size: 100% !important;
+    line-height: 26px;
+    max-width: 322px;
+      display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+    margin-bottom: 29px !important;
+}
+.related-video-card  .card-footer a{
+    font-size: 112.5% !important;
+    font-weight: 700;
+    color: var(--color-green);
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+.related-video-card .card-footer svg {
+    margin-left: 5px;
+    height: 14px;
+    width: 8px;
+}
+.related-video-card a svg path {
+    stroke: var(--color-green);
+}
+.related-video-card .card-footer {
+    max-width: fit-content;
+    margin-left: auto;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.related-video-card .card-footer:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    transition: all 0.4s ease-in-out;
+    width: 0;
+    background: var(--color-green);
+}
+.main-div .acf-module-card-with-icon:hover .card-footer:before {
+    width: 100%;
+}
+.related-content .container {
+    max-width: 1448px;
+}
+.related-content-inner {
+    position: relative;
+    padding: 0 65px;
+}
+
+
+@media (max-width:1399px){
+    .related-videos-flex {
+        height: 340px !important;
+    }
+    .related-video-card .card-body {
+        padding: 20px 20px 0;
+    }
+}
+@media (max-width:1199px){
+    .related-content {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:991px){
+    .related-content-inner h2 {
+        font-size: 250% !important;
+        margin-bottom: 30px;
+        line-height: 40px !important;
+    }
+    .related-video-card .card-body {
+        padding: 20px;
+    }
+    .related-video-card .acf-element-content{
+        margin-bottom: 10px !important;
+    }
+    .related-videos-flex {
+        height: 320px !important;
+    }
+}
+@media (max-width:767px){
+    .related-video-card{
+        height: auto;
+    }
+    .related-video-card .acf-element-content,
+    .related-video-card .card-body h4{
+        max-width: 100%;
+    }
+    .related-video-card .card-body {
+        padding: 20px 20px 0 20px;
+    }
+    .related-content-inner{
+        padding: 0 15px !important;
+    }
+    .related-videos-flex {
+        height: auto !important;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev{
+        display: none !important;
+    }
+}
+@media (max-width:575px){
+    .related-content-inner h2 {
+        font-size: 220% !important;
+    }
+
+}

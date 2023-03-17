@@ -1,0 +1,158 @@
+.cards-with-tall-image {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.cards-with-tall-image h2 {
+    font-size: 300% !important;
+    line-height: 56px !important;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 34px !important;
+}
+.cards-with-tall-image h2:before{
+    position: absolute;
+    content: '';
+    background: #00AF93;
+    width: 60px;
+    height: 7px;
+    left: 0;
+    bottom: 0;
+}
+.cards-with-tall-image .outside-of-cards .acf-element-content {
+    font-size: 125%;
+    line-height: 30px;
+    margin-bottom: 0 !important;
+}
+.cards-with-tall-image  .outside-of-cards {
+    max-width: 623px;
+}
+.cards-with-tall-image-inner .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24.5px;
+    row-gap: 60px;
+    margin-top: 57px;
+}
+.cards-with-tall-image-inner .cards .col .card {
+    position: relative;
+}
+.cards-with-tall-image-inner .cards .col .card img {
+    width: 100%;
+}
+.cards-with-tall-image-inner .card-footer {
+    margin-top: 28.5px;
+    max-width: fit-content;
+    position: relative;
+}
+.cards-with-tall-image-inner .card-footer a {
+    font-size: 162.5%;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+.cards-with-tall-image-inner .card-footer svg {
+    margin-left: 9px;
+    height: 17px;
+    width: 10px;
+}
+.cards-with-tall-image-inner .card-footer:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    transition: all 0.4s ease-in-out;
+    width: 0;
+    background: var(--color-primary);
+}
+.cards-with-tall-image-inner .acf-module-card-with-tall-images:hover .card-footer:before {
+    width: 100%;
+}
+.coverage-btn svg{
+    margin-left: 9px;
+    height: 17px;
+    width: 10px;
+}
+.coverage-btn svg path{
+    stroke: var(--color-green);
+}
+.coverage-btn a:hover svg path{
+    stroke: var(--color-base);
+}
+.coverage-btn a:hover {
+    background: var(--color-green) !important;
+    color: var(--color-base) !important;
+}
+.cards-with-tall-image-inner .inline-with-cards .acf-element-content{
+    font-size: 112.5%;
+    line-height: 28px;
+}
+
+/**/
+body.page-tax-planning-consulting .cards-with-tall-image {
+    padding-top: 191px;
+}
+body.page-who-we-serve .cards-with-tall-image .outside-of-cards {
+    max-width: 914px;
+}
+
+@media (max-width:1199px){
+    .cards-with-tall-image-inner .card-footer a{
+        font-size: 140.5%;
+    }
+    .cards-with-tall-image {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .cards-with-tall-image h2{
+         font-size: 250% !important;
+         margin-bottom: 20px !important;
+    }
+    .cards-with-tall-image-inner .card-footer {
+        margin-top: 15.5px;
+    }
+    .cards-with-tall-image-inner .cards{
+        row-gap: 20px;
+    }
+    body.page-tax-planning-consulting .cards-with-tall-image {
+        padding-top: 50px !important;
+    }
+}
+
+@media (max-width:991px){
+    header.site-header ~ main#main {
+        margin: 86px 0 0;
+    }
+    .cards-with-tall-image-inner .cards{
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+    }
+    .cards-with-tall-image .outside-of-cards {
+        max-width: 100%;
+    }
+}
+@media (max-width:767px){
+    .cards-with-tall-image h2{
+         font-size: 200% !important;
+         margin-bottom: 20px !important;
+    }
+    .cards-with-tall-image .outside-of-cards .acf-element-content{
+        font-size: 112.5%;
+        line-height: 28px;
+    }
+}
+@media (max-width:575px){
+    .cards-with-tall-image-inner .cards{
+        grid-template-columns: 1fr;
+    }
+    .cards-with-tall-image h2 {
+        font-size: 190% !important;
+        line-height: 40px !important;
+    }
+    .cards-with-tall-image {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
+  <rect width="22" height="6" transform="translate(0 22)" fill="#ffe800"/>
+  <g class="arrow">
+    <rect width="5" height="16" transform="translate(8 0)" fill="#ffe800"/>
+    <line x2="10.5" y2="10" transform="translate(1.75 7.5)" fill="none" stroke="#ffe800" stroke-width="5"/>
+    <line x1="10.5" y2="10" transform="translate(8.75 7.5)" fill="none" stroke="#ffe800" stroke-width="5"/>
+  </g>
+</svg>
